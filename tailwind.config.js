@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{html,js,jsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      spacing: {
+        30: '30px',
+      },
+    },
+  },
+  plugins: [],
+};

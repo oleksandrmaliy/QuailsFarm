@@ -1,14 +1,18 @@
-import { Link, Outlet } from 'react-router-dom';
+import // Link,
+// Outlet,
+'react-router-dom';
 // import css from './initial.module.css';
+import { Farm } from '../../components/farm.jsx';
 
 export const Initial = () => {
   //   const [count, setCount] = useState(0);
-  const initial = 'Home Page !';
+  // const initial = 'Home Page !';
 
   return (
     <>
-      <h1>{initial}</h1>
-      <ul>
+      <Farm />
+      {/* <h1>{initial}</h1> */}
+      {/* <ul>
         <li>
           <Link to="about">About us</Link>
         </li>
@@ -18,8 +22,8 @@ export const Initial = () => {
         <li>
           <Link to="contacts">Call us for joy</Link>
         </li>
-      </ul>
-      <Outlet />
+      </ul> */}
+      {/* <Outlet /> */}
     </>
   );
 };
