@@ -9,7 +9,7 @@ export const Photos = () => {
           <ul className="grid grid-cols-2 gap-8">
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail1.jpg" alt="Фото" className="w-full h-auto" />
-              <p className="text-center">Перепелка</p>
+              <p className="text-center">Перепілка</p>
             </li>
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail2.jpg" alt="Фото" className="w-full h-auto" />
@@ -17,7 +17,7 @@ export const Photos = () => {
             </li>
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail3.jpg" alt="Фото" className="w-full h-auto" />
-              <p className="text-center">Перепелки смачні</p>
+              <p className="text-center">Перепілки смачні</p>
             </li>
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail4.jpg" alt="Фото" className="w-full h-auto" />
@@ -25,7 +25,7 @@ export const Photos = () => {
             </li>
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail5.jpg" alt="Фото" className="w-full h-auto" />
-              <p className="text-center">Перепелка смачна</p>
+              <p className="text-center">Перепілка смачна</p>
             </li>
             <li className="border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
               <img src="./quail6.jpg" alt="Фото" className="w-full h-auto" />
