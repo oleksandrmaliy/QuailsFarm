@@ -1,9 +1,11 @@
 import { Photos } from '../components/photos';
 
-export const Gallery = () => {
+export const Gallery = ({ sModal }) => {
+  // const { sModal } = props;
+
   return (
     <>
-      <Photos />
+      <Photos sModal={sModal} />
     </>
   );
 };
