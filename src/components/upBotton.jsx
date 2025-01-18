@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { BsArrowUpSquareFill } from 'react-icons/bs';
 
 const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
@@ -32,9 +33,9 @@ const ScrollToTopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 p-2 bg-blue-300 bg-opacity-20 text-grey-300 rounded-full shadow-md hover:bg-blue-500"
+          className="fixed bottom-4 right-4 shadow-xl"
         >
-          ↑
+          <BsArrowUpSquareFill className="w-12 h-12 text-blue-500 text-opacity-50 hover:scale-110 hover:text-blue-500 active:text-blue-900" />
         </button>
       )}
     </>

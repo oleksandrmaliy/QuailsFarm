@@ -3,7 +3,7 @@ export const Farm = () => {
 
   return (
     <>
-      <div className="border-2 border-green-900 rounded-2xl mb-8 p-8">
+      <div className="border-2 border-green-500 rounded-2xl mb-8 p-8">
         <h2 className="mb-8 text-3xl font-bold text-center">{farm}</h2>
         <div className="text-2xl">
           <img

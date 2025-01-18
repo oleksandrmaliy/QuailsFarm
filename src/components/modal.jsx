@@ -13,7 +13,7 @@ const Modal = ({ children, cModal }) => {
       document.removeEventListener('keydown', closeModal);
       documentHTML.style.overflow = null;
     };
-  }, []);
+  });
 
   const closeModal = ({ target, currentTarget, code }) => {
     if (target === currentTarget || code === 'Escape') {

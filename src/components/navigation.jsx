@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 export const Navigation = () => {
   const buildLinkClass = ({ isActive }) => {
     return isActive
-      ? 'w-[110px] h-[50px] flex items-center justify-center text-l text-blue-900 font-bold border-2 border-blue-900 rounded-lg'
-      : 'w-[110px] h-[50px] flex items-center justify-center text-l text-grey-800 hover:text-blue-700 border-2 border-blue-900 rounded-lg';
+      ? 'w-[110px] h-[50px] flex items-center justify-center text-l text-yellow-100 bg-green-400 font-bold border-2 border-green-500 rounded-lg'
+      : 'w-[110px] h-[50px] flex items-center justify-center text-l text-green-500 hover:bg-green-100 border-2 border-green-500 rounded-lg';
   };
 
   return (
-    <nav className="flex flex-row items-center gap-4 ml-auto">
+    <nav className="grid grid-cols-2 gap-2 ml-auto items-center">
       <NavLink to="/" className={buildLinkClass}>
         Про ферму
       </NavLink>

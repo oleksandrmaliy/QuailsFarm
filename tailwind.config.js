@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        cormorant: ['"Cormorant Garamond"', 'serif'],
       },
       spacing: {
         30: '30px',

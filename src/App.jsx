@@ -7,6 +7,8 @@ import { About } from './pages/about.jsx';
 import { Gallery } from './pages/gallery.jsx';
 import { Contacts } from './pages/contacts.jsx';
 import { NotFoundPage } from './pages/notfoundpage.jsx';
+import { Advertising } from './components/advertising.jsx';
+import { Container } from './components/container.jsx';
 import Modal from './components/modal.jsx';
 import ScrollToTopButton from './components/upBotton.jsx';
 import { Footer } from './pages/footer.jsx';
@@ -38,7 +40,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div className="w-4/5 mx-auto pt-8 font-roboto sm:w-[600px] md:w-[740px] lg:w-[1000px] xl:w-[1200px] ">
+      <Container>
         <Routes>
           <Route path="/" element={<Initial />} />
           <Route path="about" element={<About />} />
@@ -46,21 +48,23 @@ export const App = () => {
           <Route path="contacts" element={<Contacts />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-        <ScrollToTopButton />
-        {modalOpen && (
-          <Modal cModal={closeModal}>
-            <img
-              src={largeImage}
-              alt="Big view"
-              className="w-full h-auto overflow-hidden"
-            />
-            <h3 className="pt-6 text-center text-2xl font-bold bg-white w-full">
-              {title}
-            </h3>
-            <p className="p-4 bg-white w-full indent-30">{text}</p>
-          </Modal>
-        )}
-      </div>
+        <Advertising />
+      </Container>
+      <ScrollToTopButton />
+      {modalOpen && (
+        <Modal cModal={closeModal}>
+          <img
+            src={largeImage}
+            alt="Big view"
+            className="w-full h-auto overflow-hidden"
+          />
+          <h3 className="pt-6 text-center text-2xl font-bold bg-white w-full">
+            {title}
+          </h3>
+          <p className="p-4 bg-white w-full indent-30">{text}</p>
+        </Modal>
+      )}
+
       <Footer />
     </>
   );
