@@ -7,11 +7,7 @@ export const Advertising = () => {
         rel="nofollow noopener noreferrer"
         className="cursor-pointer rounded-2xl overflow-hidden"
       >
-        <img
-          src="../assets/foreverStore.jpg"
-          alt="Big View"
-          className="w-full h-auto"
-        />
+        <img src="/foreverStore.jpg" alt="Big View" className="w-full h-auto" />
       </a>
     </div>
   );
