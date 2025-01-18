@@ -8,7 +8,7 @@ export const Advertising = () => {
         className="cursor-pointer rounded-2xl overflow-hidden"
       >
         <img
-          src="../../src/assets/foreverStore.jpg"
+          src="../assets/foreverStore.jpg"
           alt="Big View"
           className="w-full h-auto"
         />
