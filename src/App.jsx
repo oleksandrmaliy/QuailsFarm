@@ -43,10 +43,10 @@ export const App = () => {
       <Container>
         <Routes>
           <Route path="/" element={<Initial />} />
-          <Route path="about" element={<About />} />
-          <Route path="gallery" element={<Gallery sModal={showModal} />} />
-          <Route path="contacts" element={<Contacts />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery sModal={showModal} />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
         <Advertising />
       </Container>
