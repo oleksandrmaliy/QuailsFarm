@@ -35,7 +35,7 @@ export const Address = () => {
         </div>
 
         <div className="text-base">
-          <div className="w-full h-[500px] shadow-allGreen rounded-xl overflow-hidden">
+          <div className="w-full h-[200px] shadow-allGreen rounded-xl overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42304.11054642485!2d29.8193458!3d48.4947595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cdece76808efe9%3A0x26551f1c950376ae!2z0KjQu9GP0YXQvtCy0LAsINCS0ZbQvdC90LjRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjQ0MzI!5e0!3m2!1suk!2sua!4v1736453115275!5m2!1suk!2sua"
               className="w-full h-full"

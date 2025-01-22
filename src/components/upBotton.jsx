@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BsArrowUpSquareFill } from 'react-icons/bs';
+// import { FaChevronUp } from 'react-icons/fa';
+import { FaHandPointUp } from 'react-icons/fa';
 
 const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
@@ -35,7 +36,7 @@ const ScrollToTopButton = () => {
           onClick={scrollToTop}
           className="fixed bottom-4 right-4 shadow-xl"
         >
-          <BsArrowUpSquareFill className="w-12 h-12 text-blue-500 text-opacity-50 hover:scale-110 hover:text-blue-500 active:text-blue-900" />
+          <FaHandPointUp className="w-12 h-12 text-blue-400 bg-transparent text-opacity-50 hover:scale-105 hover:text-blue-600 active:text-blue-800" />
         </button>
       )}
     </>
