@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 const modalRoot = document.getElementById('modal-root');
 const documentHTML = document.getElementsByTagName('HTML')[0];
@@ -28,11 +29,12 @@ const Modal = ({ children, cModal }) => {
     >
       <div className="relative z-[1300] w-2/3 max-h-[calc(100vh-48px)] rounded-xl overflow-hidden overflow-y-auto">
         {children}
-        <button
-          onClick={cModal}
-          className="absolute z-[1400] top-[5px] right-[5px] inline-block w-[20px] h-[20px] border-2 border-black bg-white bg-[url('../../src/assets/cross-close-svgrepo-com.svg')] bg-center bg-no-repeat bg-[length:50%] opacity-30 rounded-full transition-opacity duration-250 ease-[cubic-bezier(0.4, 0, 0.2, 1)] cursor-pointer focus:outline-none hover:opacity-100"
-          type="button"
-        ></button>
+        <button onClick={cModal} type="button">
+          <IoIosCloseCircleOutline
+            className="absolute z-[1400] top-[5px] right-[5px] w-[20px] h-[20px] rounded-full
+          bg-white bg-opacity-30 hover:bg-opacity-100 text-grey-800 cursor-pointer"
+          />
+        </button>
       </div>
     </div>,
     modalRoot,

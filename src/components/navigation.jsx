@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 export const Navigation = () => {
   const buildLinkClass = ({ isActive }) => {
     return isActive
-      ? 'flex items-center justify-center text-lg text-green-500 bg-white font-caveat font-bold rounded-lg whitespace-nowrap p-1'
-      : 'flex items-center justify-center text-lg text-white hover:bg-green-300 font-caveat rounded-lg whitespace-nowrap p-1';
+      ? 'flex items-center justify-center text-lg text-primaryColor bg-yellow-200 font-caveat font-bold rounded-lg whitespace-nowrap p-1'
+      : 'flex items-center justify-center text-lg text-yellow-200 hover:bg-green-300 hover:text-primaryColor font-caveat rounded-lg whitespace-nowrap p-1';
   };
 
   return (

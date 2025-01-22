@@ -34,9 +34,7 @@ export const App = () => {
     setTitle(null);
     setText(null);
   };
-  console.log(largeImage);
-  console.log(title);
-  console.log(text);
+
   return (
     <>
       <Header />
@@ -56,15 +54,14 @@ export const App = () => {
           <img
             src={largeImage}
             alt="Big view"
-            className="w-full h-auto overflow-hidden"
+            className="w-full h-auto overflow-hidden rounded-xl mb-4"
           />
-          <h3 className="pt-6 text-center text-2xl font-bold bg-white w-full">
+          <h3 className="mb-4 text-center text-xl font-bold bg-white w-full rounded-xl">
             {title}
           </h3>
-          <p className="p-4 bg-white w-full indent-30">{text}</p>
+          <p className="p-4 bg-white w-full indent-30 rounded-xl">{text}</p>
         </Modal>
       )}
-
       <Footer />
     </>
   );
