@@ -1,55 +1,53 @@
+import { IconCover } from './iconCover.jsx';
+
+import { GrInstagram } from 'react-icons/gr';
+import { FaTiktok } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
+import { FaFacebookF } from 'react-icons/fa6';
+import { FaPhone } from 'react-icons/fa6';
+
+// import { IoMdMail } from 'react-icons/io';
+// import { FaPhoneVolume } from 'react-icons/fa';
+
 export const Address = () => {
   const address = `Контакти та розташування`;
 
   return (
     <>
-      <div className="border-2 border-green-900 rounded-2xl mb-8 p-8">
-        <h2 className="mb-8 text-xl font-bold text-center">{address}</h2>
-        <div className="text-base">
-          <a
-            href="tel:380962295225"
-            className="flex flex-row gap-x-2 items-center mb-4"
+      <section className="text-gray-900 bg-bgColor rounded-xl my-4 pt-4">
+        <h2 className="mb-4 text-xl font-bold text-center">{address}</h2>
+        <div className="grid grid-cols-1 mb-4">
+          <IconCover link={'tel:380501231518'} text={'+380 (50) 123-15-18'}>
+            <FaPhone className="w-8 h-8" />
+          </IconCover>
+          <IconCover
+            link={'mailto:perepilka@gmail.com'}
+            text={'perepilka@gmail.com'}
           >
-            <img src="./telsq.svg" alt="SVG Image" width="48" height="48" />
-            096-229-52-25
-          </a>
-          <a
-            href="mailto:lytvynenko.a.a@gmail.com"
-            className="flex flex-row gap-x-2 items-center mb-4"
-          >
-            <img src="./email.svg" alt="SVG Image" width="48" height="48" />{' '}
-            lytvynenko.a.a@gmail.com
-          </a>
-          <div className="flex flex-row gap-x-4 mb-8">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./igrd.svg" alt="SVG Image" width="48" height="48" />
-            </a>
-            <a
-              href="https://www.tiktok.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./ttrd.svg" alt="SVG Image" width="48" height="48" />
-            </a>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./facebook.svg"
-                alt="SVG Image"
-                width="48"
-                height="48"
-              />
-            </a>
-          </div>
+            <SiGmail className="w-8 h-8" />
+          </IconCover>
+          <IconCover link={'https://www.facebook.com'} text={'Ми у Facebook'}>
+            <FaFacebookF className="w-9 h-9" />
+          </IconCover>
+          <IconCover link={'https://www.instagram.com'} text={'Ми в Instagram'}>
+            <GrInstagram className="w-9 h-9" />
+          </IconCover>
+          <IconCover link={'https://www.tiktok.com'} text={'Ми в Tiktok'}>
+            <FaTiktok className="w-9 h-9" />
+          </IconCover>
+          {/* <IconCover link={'tel:380501231518'} text={'+380 (50) 123-15-18'}>
+          <FaPhoneVolume className="w-9 h-9" />
+        </IconCover> */}
+          {/* <IconCover
+          link={'mailto:perepilka@gmail.com'}
+          text={'perepilka@gmail.com'}
+        >
+          <IoMdMail className="w-9 h-9" />
+        </IconCover> */}
+        </div>
 
-          <div className="w-full h-[500px] p-4 border-2 border-green-900 shadow-md shadow-green-500 rounded-xl overflow-hidden">
+        <div className="text-base">
+          <div className="w-full h-[500px] shadow-custom-green rounded-xl overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d42304.11054642485!2d29.8193458!3d48.4947595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cdece76808efe9%3A0x26551f1c950376ae!2z0KjQu9GP0YXQvtCy0LAsINCS0ZbQvdC90LjRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMjQ0MzI!5e0!3m2!1suk!2sua!4v1736453115275!5m2!1suk!2sua"
               className="w-full h-full"
@@ -59,7 +57,7 @@ export const Address = () => {
             ></iframe>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

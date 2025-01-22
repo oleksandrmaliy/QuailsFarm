@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header } from './pages/header.jsx';
+import { Header } from './components/header.jsx';
 import { Initial } from './pages/initial.jsx';
 import { About } from './pages/about.jsx';
 import { Gallery } from './pages/gallery.jsx';
@@ -11,7 +11,7 @@ import { Advertising } from './components/advertising.jsx';
 import { Container } from './components/container.jsx';
 import Modal from './components/modal.jsx';
 import ScrollToTopButton from './components/upBotton.jsx';
-import { Footer } from './pages/footer.jsx';
+import { Footer } from './components/footer.jsx';
 
 // import './output.css';
 

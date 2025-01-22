@@ -14,6 +14,15 @@ export default {
       spacing: {
         30: '30px',
       },
+      colors: {
+        primaryColor: '#22c55e',
+        bgColor: '#fafafa',
+        secondaryColor: '#15803d',
+        activeColor: '#ef4444',
+      },
+      boxShadow: {
+        'custom-green': '5px 5px 10px #22c55e',
+      },
     },
   },
   plugins: [],

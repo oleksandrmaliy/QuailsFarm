@@ -1,5 +1,5 @@
-import { Container } from '../components/container.jsx';
-import { Navigation } from '../components/navigation.jsx';
+import { Container } from './container.jsx';
+import { Navigation } from './navigation.jsx';
 
 export const Header = () => {
   return (
