@@ -27,6 +27,17 @@ export default {
         allGreen:
           '4px 4px 6px #166534, -4px 4px 6px #166534, 4px -4px 6px #166534, -4px -4px 6px #166534',
       },
+      container: {
+        center: 'true', // Центрує контейнер
+        padding: '1rem', // Додає внутрішні відступи
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
+      },
     },
   },
   plugins: [],
