@@ -5,7 +5,7 @@ export const Advertising = () => {
         <p>Реклама від партнерів: </p>
         <b>
           Поєднання перепелиного м&apos;яса та яєць з продукцією марки Forever
-          дає гарантовано чудові результати для Ввас та Вашої родини!
+          дає гарантовано чудові результати для Вас та Вашої родини!
         </b>
       </div>
       <div className="w-full shadow-allYellow rounded-xl overflow-hidden hover:scale-[1.01] transition-transform duration-300 ease-in-out">
