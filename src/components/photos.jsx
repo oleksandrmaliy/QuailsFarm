@@ -6,7 +6,7 @@ export const Photos = ({ sModal }) => {
   return (
     <SectionYellow>
       <Title>Знайомтеся ближче з нашою фермою</Title>
-      <ul className="grid grid-cols-1 gap-8 text-xl p-4">
+      <ul className="grid grid-cols-1 gap-8 text-xl p-4 2xl:grid-cols-4">
         {galleryPhotos.map(({ image, largeImage, title, text }, index) => (
           <li
             key={index}
