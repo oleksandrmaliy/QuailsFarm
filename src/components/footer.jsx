@@ -11,7 +11,7 @@ export const Footer = () => {
     <footer className="flex p-4 bg-primaryColor text-center">
       <div className="w-fit mx-auto text-bgColor ">
         <div className="w-fit mx-auto flex flex-row gap-2 justify-center">
-          <IconCover link={'tel:380555555555'} text={''}>
+          <IconCover link={'tel:+380555555555'} text={''}>
             <FaPhone className="w-8 h-8" />
           </IconCover>
           <IconCover link={'mailto:хьюстон-техас@gmail.com'} text={''}>
