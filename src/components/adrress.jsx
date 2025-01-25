@@ -14,7 +14,7 @@ export const Address = () => {
       <SectionYellow>
         <Title>Контакти та розташування</Title>
         <div className="grid grid-cols-1 gap-2 mb-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          <IconCover link={'tel:380555555555'} text={'Тел: 055-555-55-55'}>
+          <IconCover link={'tel:+380555555555'} text={'Тел: 055-555-55-55'}>
             <FaPhone className="w-8 h-8" />
           </IconCover>
           <IconCover
