@@ -10,9 +10,11 @@ export const IconCover = ({ children, link, text }) => {
         <div className="w-12 h-12 grid place-items-center bg-primaryColor text-white rounded-xl group-hover:bg-secondaryColor group-active:bg-activeColor">
           {children}
         </div>
-        <p className="block font-bold px-1 group-active:text-activeColor">
-          {text}
-        </p>
+        {text && (
+          <p className="block font-bold px-1 group-active:text-activeColor">
+            {text}
+          </p>
+        )}
       </a>
     </div>
   );

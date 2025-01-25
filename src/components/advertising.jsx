@@ -1,6 +1,13 @@
 export const Advertising = () => {
   return (
     <section className="w-full p-4 mb-4 bg-primaryColor rounded-xl overflow-hidden">
+      <div className="text-bgColor mb-4">
+        <p>Реклама від партнерів: </p>
+        <b>
+          Поєднання перепелиного м&apos;яса та яєць з продукцією марки Forever
+          дає гарантовано чудові результати для Ввас та Вашої родини!
+        </b>
+      </div>
       <div className="w-full shadow-allYellow rounded-xl overflow-hidden hover:scale-[1.01] transition-transform duration-300 ease-in-out">
         <a
           href="https://380500014529.flpuretail.com/uk/?fbclid=PAZXh0bgNhZW0CMTEAAaYaHafw1NfWsPp_0lofkvuYdCzSFDWFTohxpIAaGzTg5m0nTOxu2cZZs8U_aem_hNi1CClwJ50xLa_Ogk4x6Q"

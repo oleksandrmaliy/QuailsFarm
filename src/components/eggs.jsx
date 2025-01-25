@@ -8,7 +8,7 @@ export const Eggs = () => {
         Перепелині яйця техаського білого бройлера: користь, якість та
         універсальність
       </Title>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         <div>
           <p className="indent-30">
             <b>Перепелині яйця техаського білого бройлера</b> — це справжній

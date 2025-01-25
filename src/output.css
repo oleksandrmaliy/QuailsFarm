@@ -649,6 +649,10 @@ video {
   margin-left: auto;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -665,13 +669,12 @@ video {
   display: none;
 }
 
-.aspect-\[3\/1\] {
-  aspect-ratio: 3/1;
+.aspect-\[2\/1\] {
+  aspect-ratio: 2/1;
 }
 
-.size-11 {
-  width: 2.75rem;
-  height: 2.75rem;
+.aspect-\[3\/1\] {
+  aspect-ratio: 3/1;
 }
 
 .size-10 {
@@ -727,6 +730,10 @@ video {
   width: 20px;
 }
 
+.w-\[65px\] {
+  width: 65px;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -734,30 +741,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[110px\] {
-  width: 110px;
-}
-
-.w-\[80px\] {
-  width: 80px;
-}
-
-.w-\[60px\] {
-  width: 60px;
-}
-
-.w-\[65px\] {
-  width: 65px;
-}
-
-.w-\[70px\] {
-  width: 70px;
-}
-
-.max-w-\[639px\] {
-  max-width: 639px;
 }
 
 .max-w-fit {
@@ -775,6 +758,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-items-center {
@@ -803,10 +790,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .overflow-hidden {
@@ -883,10 +866,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -917,9 +896,9 @@ video {
   font-family: "Caveat", serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -927,9 +906,9 @@ video {
   line-height: 1.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -937,14 +916,9 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1082,27 +1056,17 @@ body {
     height: 3rem;
   }
 
-  .sm\:w-\[110px\] {
-    width: 110px;
-  }
-
   .sm\:w-\[80px\] {
     width: 80px;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:text-base {
@@ -1122,24 +1086,16 @@ body {
     height: 3.5rem;
   }
 
-  .md\:w-\[90px\] {
-    width: 90px;
-  }
-
-  .md\:w-\[110px\] {
-    width: 110px;
-  }
-
-  .md\:w-\[95px\] {
-    width: 95px;
-  }
-
   .md\:w-\[85px\] {
     width: 85px;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-8 {
@@ -1154,24 +1110,19 @@ body {
     text-indent: 0px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -1185,8 +1136,17 @@ body {
     width: 110px;
   }
 
-  .lg\:w-\[90px\] {
-    width: 90px;
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl {
@@ -1198,19 +1158,9 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:size-24 {
-    width: 6rem;
-    height: 6rem;
-  }
-
   .xl\:size-20 {
     width: 5rem;
     height: 5rem;
@@ -1220,9 +1170,12 @@ body {
     width: 130px;
   }
 
-  .xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .xl\:text-2xl {
@@ -1230,14 +1183,14 @@ body {
     line-height: 2rem;
   }
 
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1249,14 +1202,6 @@ body {
 
   .\32xl\:w-\[150px\] {
     width: 150px;
-  }
-
-  .\32xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .\32xl\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .\32xl\:text-3xl {

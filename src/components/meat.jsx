@@ -5,7 +5,7 @@ export const Meat = () => {
   return (
     <SectionYellow>
       <Title>Техаський білий бройлерний перепел</Title>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         <div>
           <p className="indent-[30px]">
             <b>Техаський білий бройлерний перепел (Texas A&M Quail)</b> – це
