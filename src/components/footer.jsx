@@ -27,7 +27,9 @@ export const Footer = () => {
           &copy; {new Date().getFullYear()}. Усі права захищені.
         </p>
 
-        <p>Розроблено MaliyCo.</p>
+        <p>
+          Розроблено <span className="font-marck text-xl">MaliyCo</span>.
+        </p>
       </div>
     </footer>
   );

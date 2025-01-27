@@ -10,6 +10,7 @@ export default {
         amatic: ['"Amatic SC"', 'serif'],
         caveat: ['"Caveat"', 'serif'],
         shantell: ['"Shantell Sans"', 'serif'],
+        marck: ['Marck Script', 'serif'],
       },
       spacing: {
         30: '30px',
