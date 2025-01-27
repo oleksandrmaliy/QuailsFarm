@@ -1,6 +1,6 @@
 import { IconCover } from './iconCover.jsx';
 
-import { GrInstagram } from 'react-icons/gr';
+import { TbBrandInstagramFilled } from 'react-icons/tb';
 import { FaTiktok } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { FaFacebookF } from 'react-icons/fa6';
@@ -10,19 +10,19 @@ export const Contacts = ({ texts, className }) => {
   return (
     <div className={className}>
       <IconCover link={'tel:+380555555555'} text={texts[0]}>
-        <FaPhone className="w-8 h-8" />
+        <FaPhone className="size-8" />
       </IconCover>
       <IconCover link={'mailto:myquail@gmail.com'} text={texts[1]}>
-        <SiGmail className="w-8 h-8" />
+        <SiGmail className="size-8" />
       </IconCover>
       <IconCover link={'https://www.facebook.com'} text={texts[2]}>
-        <FaFacebookF className="w-9 h-9" />
+        <FaFacebookF className="size-9" />
       </IconCover>
       <IconCover link={'https://www.instagram.com'} text={texts[3]}>
-        <GrInstagram className="w-9 h-9" />
+        <TbBrandInstagramFilled className="size-10" />
       </IconCover>
       <IconCover link={'https://www.tiktok.com'} text={texts[4]}>
-        <FaTiktok className="w-9 h-9" />
+        <FaTiktok className="size-9" />
       </IconCover>
     </div>
   );

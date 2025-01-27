@@ -5,7 +5,7 @@ import { IoIosCloseCircleOutline } from 'react-icons/io';
 const modalRoot = document.getElementById('modal-root');
 const documentHTML = document.getElementsByTagName('HTML')[0];
 
-const Modal = ({ children, cModal }) => {
+export const Modal = ({ children, cModal }) => {
   useEffect(() => {
     document.addEventListener('keydown', closeModal);
     documentHTML.style.overflow = 'hidden';
@@ -41,4 +41,4 @@ const Modal = ({ children, cModal }) => {
   );
 };
 
-export default Modal;
+// export default Modal;

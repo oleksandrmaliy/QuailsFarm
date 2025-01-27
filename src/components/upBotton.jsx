@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 // import { FaChevronUp } from 'react-icons/fa';
 import { FaHandPointUp } from 'react-icons/fa';
 
-const ScrollToTopButton = () => {
+export const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
 
   // Відстеження прокручування сторінки
@@ -43,4 +43,4 @@ const ScrollToTopButton = () => {
   );
 };
 
-export default ScrollToTopButton;
+// export default ScrollToTopButton;

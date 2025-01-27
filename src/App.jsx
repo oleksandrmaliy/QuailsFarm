@@ -9,11 +9,9 @@ import { Contacts } from './pages/contacts.jsx';
 import { NotFoundPage } from './pages/notfoundpage.jsx';
 import { Advertising } from './components/advertising.jsx';
 import { Container } from './components/container.jsx';
-import Modal from './components/modal.jsx';
-import ScrollToTopButton from './components/upBotton.jsx';
+import { Modal } from './components/modal.jsx';
+import { ScrollToTopButton } from './components/upBotton.jsx';
 import { Footer } from './components/footer.jsx';
-
-// import './output.css';
 
 export const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
