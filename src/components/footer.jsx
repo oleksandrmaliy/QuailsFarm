@@ -1,6 +1,5 @@
 import { Contacts } from './contacts.jsx';
-import { IconCover } from './iconCover.jsx';
-import { BsGeoAltFill } from 'react-icons/bs';
+import { texts } from '../services/constants.jsx';
 
 export const Footer = () => {
   return (
@@ -8,15 +7,10 @@ export const Footer = () => {
       <div className="w-fit mx-auto text-bgColor ">
         <div className="flex flex-row gap-2">
           <Contacts
-            texts={[]}
+            texts={texts}
             className={'w-fit mx-auto flex flex-row gap-2 justify-center'}
+            showText={false}
           />
-          <IconCover
-            link={'https://maps.app.goo.gl/nXSa2XPNPPRjQ8J17'}
-            text={''}
-          >
-            <BsGeoAltFill className="w-9 h-9" />
-          </IconCover>
         </div>
 
         <p className="font-caveat font-bold text-3xl">
