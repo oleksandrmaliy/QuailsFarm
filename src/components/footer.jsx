@@ -14,7 +14,7 @@ export const Footer = () => {
         </div>
 
         <p className="font-caveat font-bold text-3xl">
-          Ферма &ldquo;Шляхетна перепелка&rdquo;
+          Ферма &ldquo;Шляхетна перепілка&rdquo;
         </p>
 
         <p className="text-base">
