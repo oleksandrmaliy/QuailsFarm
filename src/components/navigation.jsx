@@ -12,7 +12,7 @@ export const Navigation = () => {
       <NavLink to="/" className={buildLinkClass}>
         Про ферму
       </NavLink>
-      <NavLink to="/about" className={buildLinkClass}>
+      <NavLink to="/productions" className={buildLinkClass}>
         Продукція
       </NavLink>
       <NavLink to="/gallery" className={buildLinkClass}>

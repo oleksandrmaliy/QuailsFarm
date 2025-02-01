@@ -5,7 +5,7 @@ export const NotFoundPage = () => {
 
   return (
     <>
-      <h2>{notfound}</h2>
+      <h2 className="font-black text-center items-center">{notfound}</h2>
     </>
   );
 };

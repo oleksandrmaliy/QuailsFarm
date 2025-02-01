@@ -1,9 +1,11 @@
 import { Address } from '../components/adrress.jsx';
 
-export const Contacts = () => {
+const Contacts = () => {
   return (
     <>
       <Address />
     </>
   );
 };
+
+export default Contacts;

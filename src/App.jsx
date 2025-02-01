@@ -1,17 +1,22 @@
-import { useState } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header } from './components/header.jsx';
-import { Initial } from './pages/initial.jsx';
-import { About } from './pages/about.jsx';
-import { Gallery } from './pages/gallery.jsx';
-import { Contacts } from './pages/contacts.jsx';
+// import About from './pages/about.jsx';
+// import Productions from './pages/productions.jsx';
+// import Gallery from './pages/gallery.jsx';
+// import Contacts from './pages/contacts.jsx';
 import { NotFoundPage } from './pages/notfoundpage.jsx';
+import { Header } from './components/header.jsx';
+import { Footer } from './components/footer.jsx';
 import { Advertising } from './components/advertising.jsx';
 import { Container } from './components/container.jsx';
 import { Modal } from './components/modal.jsx';
 import { ScrollToTopButton } from './components/upBotton.jsx';
-import { Footer } from './components/footer.jsx';
+
+const About = lazy(() => import('./pages/about.jsx'));
+const Productions = lazy(() => import('./pages/productions.jsx'));
+const Gallery = lazy(() => import('./pages/gallery.jsx'));
+const Contacts = lazy(() => import('./pages/contacts.jsx'));
 
 export const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -37,13 +42,24 @@ export const App = () => {
     <>
       <Header />
       <Container>
-        <Routes>
-          <Route path="/" element={<Initial />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery sModal={showModal} />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/*" element={<NotFoundPage />} />
-        </Routes>
+        <Suspense
+          fallback={
+            <div className="mt-10 mb-10">
+              <p className="font-black text-6xl text-center">Loading...</p>
+              <div className="flex justify-center items-center h-64">
+                <div className="w-10 h-10 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+              </div>
+            </div>
+          }
+        >
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/productions" element={<Productions />} />
+            <Route path="/gallery" element={<Gallery sModal={showModal} />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
         <Advertising />
       </Container>
       <ScrollToTopButton />

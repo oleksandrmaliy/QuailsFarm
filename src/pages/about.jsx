@@ -1,11 +1,11 @@
-import { Meat } from '../components/meat.jsx';
-import { Eggs } from '../components/eggs.jsx';
+import { Farm } from '../components/farm.jsx';
 
-export const About = () => {
+const About = () => {
   return (
     <>
-      <Meat />
-      <Eggs />
+      <Farm />
     </>
   );
 };
+
+export default About;
