@@ -14,7 +14,7 @@ export const Photos = ({ sModal }) => {
             className="cursor-pointer shadow-allGreen rounded-xl hover:scale-[1.01] transition-transform 
             duration-300 ease-in-out overflow-hidden"
           >
-            <img src={image} alt="Фото" className="w-full h-auto" />
+            <img src={image} alt="Фото" className="w-full aspect-[4/3]" />
             <p className="text-center">{title}</p>
           </li>
         ))}
