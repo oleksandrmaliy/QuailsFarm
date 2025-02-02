@@ -46,7 +46,7 @@ export const App = () => {
           fallback={
             <div className="mt-10 mb-10">
               <p className="font-bold text-blue-500 text-4xl text-center">
-                Loading...
+                Завантаження...
               </p>
               <div className="flex justify-center items-center h-20">
                 <div className="w-10 h-10 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>

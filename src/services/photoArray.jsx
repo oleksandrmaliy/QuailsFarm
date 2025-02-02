@@ -5,7 +5,7 @@ import quail4 from '../../src/assets/images/quail4.jpg';
 import quail5 from '../../src/assets/images/quail5.jpg';
 import quail6 from '../../src/assets/images/quail6.jpg';
 
-const galleryPhotos = [
+export const photoArray = [
   {
     image: quail1,
     largeImage: quail1,
@@ -80,4 +80,4 @@ const galleryPhotos = [
   },
 ];
 
-export default galleryPhotos;
+

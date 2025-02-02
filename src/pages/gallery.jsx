@@ -1,9 +1,9 @@
-import { Photos } from '../components/photos';
+import { PhotoGallery } from '../components/photoGallery.jsx';
 
 const Gallery = ({ sModal }) => {
   return (
     <>
-      <Photos sModal={sModal} />
+      <PhotoGallery sModal={sModal} />
     </>
   );
 };

@@ -42,11 +42,4 @@ export const texts = [
     link: 'https://maps.app.goo.gl/nXSa2XPNPPRjQ8J17',
     classN: 'size-9',
   },
-
-  // 'Тел: 055-555-55-55',
-  // 'myquail@gmail.com',
-  // 'Ми у Facebook',
-  // 'Ми в Instagram',
-  // 'Ми в Tiktok',
-  // 'Позиція на мапі',
 ];

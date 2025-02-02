@@ -1,13 +1,13 @@
-import { SectionYellow } from './sectionYellow';
+import { SectionYellow } from './sectionYellow.jsx';
 import { Title } from './title.jsx';
-import galleryPhotos from './galleryphotos.jsx';
+import { photoArray } from '../services/photoArray.jsx';
 
-export const Photos = ({ sModal }) => {
+export const PhotoGallery = ({ sModal }) => {
   return (
     <SectionYellow>
       <Title>Знайомтеся ближче з нашою фермою</Title>
       <ul className="grid grid-cols-1 gap-5 text-xl sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {galleryPhotos.map(({ image, largeImage, title, text }, index) => (
+        {photoArray.map(({ image, largeImage, title, text }, index) => (
           <li
             key={index}
             onClick={() => sModal({ largeImage, title, text })}
