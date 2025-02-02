@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-// import { FaChevronUp } from 'react-icons/fa';
 import { FaHandPointUp } from 'react-icons/fa';
 
 export const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
 
-  // Відстеження прокручування сторінки
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -17,11 +15,9 @@ export const ScrollToTopButton = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Очищення слухача подій під час демонтажу компонента
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Прокручування сторінки вгору
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -42,5 +38,3 @@ export const ScrollToTopButton = () => {
     </>
   );
 };
-
-// export default ScrollToTopButton;

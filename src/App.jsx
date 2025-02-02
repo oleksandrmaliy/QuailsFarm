@@ -45,8 +45,10 @@ export const App = () => {
         <Suspense
           fallback={
             <div className="mt-10 mb-10">
-              <p className="font-black text-6xl text-center">Loading...</p>
-              <div className="flex justify-center items-center h-64">
+              <p className="font-bold text-blue-500 text-4xl text-center">
+                Loading...
+              </p>
+              <div className="flex justify-center items-center h-20">
                 <div className="w-10 h-10 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
               </div>
             </div>
