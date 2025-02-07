@@ -645,16 +645,8 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .ml-auto {
@@ -720,8 +712,8 @@ video {
   height: 3rem;
 }
 
-.h-64 {
-  height: 16rem;
+.h-20 {
+  height: 5rem;
 }
 
 .h-\[20px\] {
@@ -734,10 +726,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .max-h-\[calc\(100vh-48px\)\] {
@@ -971,9 +959,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base {
@@ -994,11 +982,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-black {
@@ -1023,6 +1006,11 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity, 1));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
@@ -1043,9 +1031,14 @@ video {
   color: rgb(253 224 71 / var(--tw-text-opacity, 1));
 }
 
-.text-blue-500 {
+.text-red-950 {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+  color: rgb(69 10 10 / var(--tw-text-opacity, 1));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-50 {
@@ -1128,6 +1121,12 @@ body {
   color: rgb(22 101 52 / var(--tw-text-opacity, 1));
 }
 
+.hover\:shadow-allYellow:hover {
+  --tw-shadow: 4px 4px 6px #fef08a, -4px 4px 6px #fef08a, 4px -4px 6px #fef08a, -4px -4px 6px #fef08a;
+  --tw-shadow-colored: 4px 4px 6px var(--tw-shadow-color), -4px 4px 6px var(--tw-shadow-color), 4px -4px 6px var(--tw-shadow-color), -4px -4px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .active\:text-blue-800:active {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity, 1));
@@ -1136,6 +1135,12 @@ body {
 .group:hover .group-hover\:bg-secondaryColor {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
+}
+
+.group:hover .group-hover\:shadow-allGreen {
+  --tw-shadow: 4px 4px 6px #166534, -4px 4px 6px #166534, 4px -4px 6px #166534, -4px -4px 6px #166534;
+  --tw-shadow-colored: 4px 4px 6px var(--tw-shadow-color), -4px 4px 6px var(--tw-shadow-color), 4px -4px 6px var(--tw-shadow-color), -4px -4px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .group:active .group-active\:bg-activeColor {

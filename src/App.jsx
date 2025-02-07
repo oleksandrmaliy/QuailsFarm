@@ -1,10 +1,7 @@
 import { useState, Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
-// import About from './pages/about.jsx';
-// import Productions from './pages/productions.jsx';
-// import Gallery from './pages/gallery.jsx';
-// import Contacts from './pages/contacts.jsx';
 import { NotFoundPage } from './pages/notfoundpage.jsx';
 import { Header } from './components/header.jsx';
 import { Footer } from './components/footer.jsx';
@@ -40,12 +37,30 @@ export const App = () => {
 
   return (
     <>
+      <Helmet>
+        {/* Meta для SEO */}
+        <meta
+          name="description"
+          content="Вирощуємо Техаських білих бройлерних перепелів та яйця для вашого здоров'я та задоволення."
+        />
+        <meta
+          name="keywords"
+          content="ферма, перепела, м'ясо, яйця, Техаський білий бройлер, здоров'я, натуральні продукти"
+        />
+        <meta name="author" content="Ферма сімейної справи" />
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Метатеги для покращення доступності та SEO */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ферма сімейної справи - Перепела та натуральні продукти</title>
+      </Helmet>
       <Header />
       <Container>
         <Suspense
           fallback={
             <div className="mt-10 mb-10">
-              <p className="font-bold text-blue-500 text-4xl text-center">
+              <p className="font-bold text-blue-500 text-3xl text-center">
                 Завантаження...
               </p>
               <div className="flex justify-center items-center h-20">

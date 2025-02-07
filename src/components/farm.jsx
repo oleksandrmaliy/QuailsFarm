@@ -5,7 +5,7 @@ export const Farm = () => {
   return (
     <>
       <SectionYellow>
-        <Title>Ферма сімейної справи!</Title>
+        <Title>Ферма сімейної справи</Title>
         <img
           src="./quailfarm.jpg"
           alt="Quail Farm"
