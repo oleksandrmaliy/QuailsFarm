@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { TiThMenu } from 'react-icons/ti';
 import { IoMdClose } from 'react-icons/io';
-import { RiCloseCircleLine } from 'react-icons/ri';
-import { CgCloseR } from 'react-icons/cg';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +36,7 @@ export const Navigation = () => {
 
         <button className="md:hidden block" onClick={toggleMenu}>
           {isOpen ? (
-            <CgCloseR className="size-6 text-yellow-200" />
+            <IoMdClose className="size-6 text-yellow-200" />
           ) : (
             <TiThMenu className="size-6 text-yellow-200" />
           )}
