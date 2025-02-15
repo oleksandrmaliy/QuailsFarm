@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-row gap-2">
           <Contacts
             texts={texts}
-            className={'w-fit mx-auto flex flex-row gap-2 justify-center'}
+            className={'w-fit mx-auto flex flex-wrap gap-2 justify-center '}
             showText={false}
           />
         </div>
