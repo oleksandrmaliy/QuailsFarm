@@ -1,7 +1,19 @@
 // import css from './notfoundpage.module.css';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const NotFoundPage = () => {
-  const notfound = 'Така сторінка не знайдена !';
+  const notfound = 'Сторінку не знайдено. Повертаємо на головну...';
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/', { replace: true });
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
     <>
@@ -11,3 +23,17 @@ export const NotFoundPage = () => {
     </>
   );
 };
+
+// export const NotFound = () => {
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       navigate('/', { replace: true });
+//     }, 3000);
+
+//     return () => clearTimeout(timer);
+//   }, [navigate]);
+
+//   return <h1>Сторінку не знайдено. Повертаємо на головну...</h1>;
+// };
