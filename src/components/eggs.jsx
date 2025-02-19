@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { SectionYellow } from './sectionYellow';
 import { Title } from './title.jsx';
@@ -8,21 +8,28 @@ import EggsTextOne from './eggsTextOne.jsx';
 import EggsTextTwo from './eggsTextTwo.jsx';
 
 export const Eggs = () => {
+  const [effect, setEffect] = useState(false);
   const [eggsText, setEggsText] = useState(false);
 
   const identity = 'eggsButton';
 
+  useEffect(() => {
+    if (!effect) {
+      return;
+    }
+    if (!eggsText) {
+      document.getElementById(identity)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  }, [effect, eggsText]);
+
   const handleClick = () => {
-    new Promise((resolve) => setTimeout(resolve, 0)).then(() => {
-      if (eggsText) {
-        document.getElementById(identity)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
-      }
-    });
     setEggsText(!eggsText);
+    setEffect(true);
   };
+
   return (
     <SectionYellow>
       <Title>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { SectionYellow } from './sectionYellow';
 import { Title } from './title.jsx';
@@ -8,19 +8,26 @@ import MeatTextTwo from './meatTextTwo.jsx';
 import MoreButton from './moreButton.jsx';
 
 export const Meat = () => {
+  const [effect, setEffect] = useState(false);
   const [meatText, setMeatText] = useState(false);
+
   const identity = 'meatButton';
 
+  useEffect(() => {
+    if (!effect) {
+      return;
+    }
+    if (!meatText) {
+      document.getElementById(identity)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  }, [effect, meatText]);
+
   const handleClick = () => {
-    new Promise((resolve) => setTimeout(resolve, 0)).then(() => {
-      if (meatText) {
-        document.getElementById(identity)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
-      }
-    });
     setMeatText(!meatText);
+    setEffect(true);
   };
 
   return (
