@@ -11,11 +11,13 @@ export const PhotoGallery = ({ sModal }) => {
           <li
             key={index}
             onClick={() => sModal({ largeImage, title, text })}
-            className="cursor-pointer shadow-allGreen rounded-xl hover:scale-[1.01] transition-transform 
+            className="cursor-pointer rounded-xl hover:shadow-allGreen hover:scale-[1.01] border-2 border-primaryColor transition-transform 
             duration-300 ease-in-out overflow-hidden"
           >
             <img src={image} alt="Фото" className="w-full aspect-[4/3]" />
-            <p className="text-center">{title}</p>
+            <p className="text-center font-bold text-primaryColor bg-bgColor">
+              {title}
+            </p>
           </li>
         ))}
       </ul>

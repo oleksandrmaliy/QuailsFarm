@@ -601,14 +601,14 @@ video {
   background: linear-gradient(45deg, #166534, #fef08a);
   background-clip: content-box;
   /* 🔹 Важливо для підтримки градієнта */
-  border: 3px solid transparent;
+  border: 3px solid #166534;
   /* 🔹 Додає чіткі межі */
 }
 
 .modal-content::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #fef08a;
-  border: 5px solid #166534;
+  background-color: #166534;
+  border: 3px solid #fef08a;
 }
 
 .fixed {
@@ -635,12 +635,20 @@ video {
   bottom: 1rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-4 {
   right: 1rem;
 }
 
 .right-\[5px\] {
   right: 5px;
+}
+
+.top-2 {
+  top: 0.5rem;
 }
 
 .top-\[5px\] {
@@ -756,12 +764,29 @@ video {
   height: auto;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-full {
   height: 100%;
 }
 
-.max-h-\[calc\(100vh-48px\)\] {
-  max-height: calc(100vh - 48px);
+.h-\[80em\] {
+  height: 80em;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-2\/3 {
+  height: 66.666667%;
+}
+
+.max-h-\[80vh\] {
+  max-height: 80vh;
 }
 
 .w-10 {
@@ -791,6 +816,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-fit {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .max-w-fit {
@@ -900,6 +930,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-4 {
   border-width: 4px;
 }
@@ -921,11 +955,6 @@ video {
 .bg-bgColor {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primaryColor {
@@ -953,6 +982,11 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1037,18 +1071,9 @@ video {
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .text-bgColor {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
 }
 
 .text-blue-500 {
@@ -1059,6 +1084,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
 
 .text-primaryColor {
@@ -1079,11 +1109,6 @@ video {
 .text-yellow-200 {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity, 1));
-}
-
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-50 {
@@ -1138,14 +1163,14 @@ body::-webkit-scrollbar-track {
   background: linear-gradient(45deg, #166534, #fef08a);
   background-clip: content-box;
   /* 🔹 Важливо для підтримки градієнта */
-  border: 3px solid transparent;
+  border: 3px solid #166534;
   /* 🔹 Додає чіткі межі */
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #fef08a;
-  border: 5px solid #166534;
+  background-color: #166534;
+  border: 3px solid #fef08a;
 }
 
 .hover\:scale-105:hover {
@@ -1166,23 +1191,29 @@ body::-webkit-scrollbar-thumb {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-green-300:hover {
+.hover\:bg-secondaryColor:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity, 1));
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-opacity-100:hover {
   --tw-bg-opacity: 1;
 }
 
-.hover\:text-blue-600:hover {
+.hover\:text-bgColor:hover {
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+  color: rgb(254 240 138 / var(--tw-text-opacity, 1));
 }
 
-.hover\:text-primaryColor:hover {
+.hover\:text-green-700:hover {
   --tw-text-opacity: 1;
-  color: rgb(22 101 52 / var(--tw-text-opacity, 1));
+  color: rgb(21 128 61 / var(--tw-text-opacity, 1));
+}
+
+.hover\:shadow-allGreen:hover {
+  --tw-shadow: 4px 4px 6px #166534, -4px 4px 6px #166534, 4px -4px 6px #166534, -4px -4px 6px #166534;
+  --tw-shadow-colored: 4px 4px 6px var(--tw-shadow-color), -4px 4px 6px var(--tw-shadow-color), 4px -4px 6px var(--tw-shadow-color), -4px -4px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-allYellow:hover {
@@ -1191,9 +1222,9 @@ body::-webkit-scrollbar-thumb {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.active\:text-blue-800:active {
+.active\:text-green-900:active {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
+  color: rgb(20 83 45 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .group-hover\:bg-secondaryColor {

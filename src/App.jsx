@@ -85,12 +85,12 @@ export const App = () => {
           <img
             src={largeImage}
             alt="Big view"
-            className="w-full h-auto overflow-hidden rounded-xl mb-4"
+            className="w-full max-h-[80vh] object-contain mx-auto mb-4 overflow-hidden rounded-xl"
           />
-          <h3 className="mb-4 text-center text-xl font-bold bg-white w-full rounded-xl">
+          <h3 className="mb-4 p-4 text-center text-xl font-bold bg-bgColor w-full rounded-xl">
             {title}
           </h3>
-          <p className="p-4 bg-white w-full indent-30 rounded-xl">{text}</p>
+          <p className="p-4 bg-bgColor w-full indent-30 rounded-xl">{text}</p>
         </Modal>
       )}
       <Footer />

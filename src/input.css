@@ -14,13 +14,13 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
   background: linear-gradient(45deg, #166534, #fef08a);
   background-clip: content-box; /* 🔹 Важливо для підтримки градієнта */
-  border: 3px solid transparent; /* 🔹 Додає чіткі межі */
+  border: 3px solid #166534; /* 🔹 Додає чіткі межі */
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #fef08a;
-  border: 5px solid #166534;
+  background-color: #166534;
+  border: 3px solid #fef08a;
 }
 
 @layer components {
@@ -32,12 +32,12 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: linear-gradient(45deg, #166534, #fef08a);
     background-clip: content-box; /* 🔹 Важливо для підтримки градієнта */
-    border: 3px solid transparent; /* 🔹 Додає чіткі межі */
+    border: 3px solid #166534; /* 🔹 Додає чіткі межі */
   }
 
   .modal-content::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #fef08a;
-    border: 5px solid #166534;
+    background-color: #166534;
+    border: 3px solid #fef08a;
   }
 }

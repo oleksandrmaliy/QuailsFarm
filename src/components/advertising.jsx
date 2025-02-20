@@ -1,7 +1,23 @@
+import { useState } from 'react';
+
+import AdsOne from './ads';
+import AdsTwo from './ads';
+
 export const Advertising = () => {
+  const [adOne, setAdOne] = useState(true);
+  const [adTwo, setAdTwo] = useState(true);
+
+  const textOne = 'Це реклама номер один';
+  const urlOne = '#';
+  const imgOne = '../../src/assets/alimgone.jpg';
+
+  const textTwo = 'Це реклама номер дра';
+  const urlTwo = '#';
+  const imgTwo = '../../src/assets/alimgtwo.jpg';
+
   return (
-    <section className="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
-      <div className="w-full p-4 bg-primaryColor rounded-xl overflow-hidden flex flex-col justify-between">
+    <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      {/* <div className="w-full p-4 bg-primaryColor rounded-xl overflow-hidden flex flex-col justify-between">
         <div className="text-bgColor mb-4">
           <p>Реклама від партнерів: </p>
           <b>
@@ -24,8 +40,25 @@ export const Advertising = () => {
             />
           </a>
         </div>
-      </div>
-      <div className="w-full p-4 bg-primaryColor rounded-xl overflow-hidden flex flex-col justify-between">
+      </div> */}
+      {adOne && (
+        <AdsOne
+          img={imgOne}
+          url={urlOne}
+          text={textOne}
+          setAdState={setAdOne}
+        />
+      )}
+      {adTwo && (
+        <AdsTwo
+          img={imgTwo}
+          url={urlTwo}
+          text={textTwo}
+          setAdState={setAdTwo}
+        />
+      )}
+
+      {/* <div className="w-full p-4 bg-primaryColor rounded-xl overflow-hidden flex flex-col justify-between">
         <div className="text-bgColor mb-4">
           <p>Реклама від партнерів: </p>
           <b>
@@ -48,7 +81,7 @@ export const Advertising = () => {
             />
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

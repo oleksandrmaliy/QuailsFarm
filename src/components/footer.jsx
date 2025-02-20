@@ -5,10 +5,10 @@ export const Footer = () => {
   return (
     <footer className="flex p-4 bg-primaryColor text-center">
       <div className="w-fit mx-auto text-bgColor ">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-4">
           <Contacts
             texts={texts}
-            className={'w-fit mx-auto flex flex-wrap gap-2 justify-center '}
+            className={'w-fit mx-auto flex flex-wrap gap-4 justify-center '}
             showText={false}
           />
         </div>

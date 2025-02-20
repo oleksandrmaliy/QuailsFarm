@@ -9,7 +9,7 @@ export const IconCover = ({ children, link, text }) => {
         transition-transform duration-300 ease-in-out"
       >
         <div
-          className={`w-12 h-12 grid place-items-center bg-primaryColor text-white rounded-xl
+          className={`w-12 h-12 grid place-items-center bg-primaryColor text-bgColor rounded-xl
          group-hover:bg-secondaryColor group-active:bg-activeColor
          ${text ? 'group-hover:shadow-allGreen' : 'hover:shadow-allYellow'}`}
         >

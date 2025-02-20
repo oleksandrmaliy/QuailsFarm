@@ -13,7 +13,7 @@ export const Address = () => {
           <Contacts
             texts={texts}
             className={
-              'grid grid-cols-1 gap-2 w-fit mx-auto sm:grid-cols-2 md:grid-cols-1 whitespace-nowrap'
+              'grid grid-cols-1 gap-4 w-fit mx-auto sm:grid-cols-2 md:grid-cols-1 whitespace-nowrap'
             }
             showText={true}
           />

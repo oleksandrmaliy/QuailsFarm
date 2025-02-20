@@ -12,14 +12,14 @@ export const Navigation = () => {
 
   const buildLinkClass = ({ isActive }) => {
     return isActive
-      ? 'w-[85px] md:w-[85px] lg:w-[110px] xl:w-[130px] 2xl:w-[150px] aspect-[3/1] flex items-center justify-center text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-primaryColor bg-bgColor font-bold rounded-lg whitespace-nowrap'
-      : 'w-[85px] md:w-[85px] lg:w-[110px] xl:w-[130px] 2xl:w-[150px] aspect-[3/1] flex items-center justify-center text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-bgColor hover:bg-green-300 hover:text-primaryColor rounded-lg whitespace-nowrap';
+      ? 'w-[85px] md:w-[85px] lg:w-[110px] xl:w-[130px] 2xl:w-[150px] aspect-[3/1] flex items-center justify-center text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-primaryColor bg-bgColor shadow-allYellow border-2 border-primaryColor font-bold rounded-lg whitespace-nowrap'
+      : 'w-[85px] md:w-[85px] lg:w-[110px] xl:w-[130px] 2xl:w-[150px] aspect-[3/1] flex items-center justify-center text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-bgColor hover:bg-secondaryColor hover:text-bgColor hover:shadow-allYellow hover:scale-[1.03] rounded-lg whitespace-nowrap';
   };
 
   return (
     <>
       <nav className="relative w-fit ml-auto flex items-end justify-end font-caveat">
-        <div className="hidden md:flex flex-row gap-2 ml-auto">
+        <div className="hidden md:flex flex-row gap-4 ml-auto">
           <NavLink to="/" className={buildLinkClass}>
             Про ферму
           </NavLink>

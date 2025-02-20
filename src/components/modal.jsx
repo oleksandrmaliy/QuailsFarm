@@ -25,14 +25,14 @@ export const Modal = ({ children, cModal }) => {
   return createPortal(
     <div
       onClick={closeModal}
-      className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-[1200]"
+      className="fixed inset-0 flex justify-center items-center bg-primaryColor bg-opacity-50 z-[1200]"
     >
-      <div className="modal-content relative z-[1300] w-2/3 max-h-[calc(100vh-48px)] rounded-xl overflow-y-auto">
+      <div className="modal-content relative z-[1300] w-2/3 max-h-[80vh] rounded-xl overflow-y-auto">
         {children}
         <button onClick={cModal} type="button">
           <IoIosCloseCircleOutline
-            className="absolute z-[1400] top-[5px] right-[5px] w-[20px] h-[20px] rounded-full
-          bg-white bg-opacity-30 hover:bg-opacity-100 text-grey-800 cursor-pointer"
+            className="absolute z-[1400] top-2 right-2 size-8 rounded-full
+          bg-white text-primaryColor bg-opacity-30 hover:bg-opacity-100 cursor-pointer"
           />
         </button>
       </div>
