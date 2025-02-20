@@ -15,7 +15,7 @@ export const PhotoGallery = ({ sModal }) => {
             duration-300 ease-in-out overflow-hidden"
           >
             <img src={image} alt="Фото" className="w-full aspect-[4/3]" />
-            <p className="text-center font-bold text-primaryColor bg-bgColor">
+            <p className="text-center py-2 font-bold text-primaryColor bg-bgColor">
               {title}
             </p>
           </li>
