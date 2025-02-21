@@ -4,6 +4,11 @@
 
 body {
   @apply bg-neutral-300 text-gray-800;
+
+  background-image: url('/quail.svg'); /* Використання SVG як фону */
+  background-repeat: repeat; /* Повторення зображення */
+  background-size: 10vw 10vw; /* Зміна розміру кожного повторення */
+  background-position: 0 0;
 }
 
 body::-webkit-scrollbar {

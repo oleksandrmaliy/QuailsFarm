@@ -27,7 +27,7 @@ export const Modal = ({ children, cModal }) => {
       onClick={closeModal}
       className="fixed inset-0 flex justify-center items-center bg-primaryColor bg-opacity-50 z-[1200]"
     >
-      <div className="modal-content relative z-[1300] w-2/3 max-h-[80vh] rounded-xl overflow-y-auto">
+      <div className="modal-content relative z-[1300] max-w-[90vw] max-h-[90vh] aspect-[4/3] rounded-xl overflow-y-auto">
         {children}
         <button onClick={cModal} type="button">
           <IoIosCloseCircleOutline

@@ -85,7 +85,7 @@ export const App = () => {
           <img
             src={largeImage}
             alt="Big view"
-            className="w-full max-h-[80vh] object-contain mx-auto mb-4 overflow-hidden rounded-xl"
+            className="w-full max-h-[90vh] object-contain mx-auto mb-4 overflow-hidden rounded-xl"
           />
           <h3 className="mb-4 p-4 text-center text-xl font-bold bg-bgColor w-full rounded-xl">
             {title}

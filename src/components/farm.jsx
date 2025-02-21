@@ -1,5 +1,6 @@
 import { SectionYellow } from './sectionYellow';
 import { Title } from './title';
+import quailFarm from '../assets/images/quailfarm.jpg';
 
 export const Farm = () => {
   return (
@@ -7,7 +8,7 @@ export const Farm = () => {
       <SectionYellow>
         <Title>Ферма сімейної справи</Title>
         <img
-          src="./quailfarm.jpg"
+          src={quailFarm}
           alt="Quail Farm"
           className="w-full h-auto mb-4 rounded-xl overflow-hidden"
         />
